@@ -26,6 +26,7 @@ function LoginPage() {
     const [submitted, setSubmitted] = useState(false);
     const { username, password } = inputs;
     // const loggingIn = useSelector(state => state.authentication.loggingIn);
+    // console.log(loggingIn)
     const dispatch = useDispatch();
     const location = useLocation();
     const error = useSelector(state => state.alert);
@@ -47,6 +48,7 @@ function LoginPage() {
         if (username && password) {
             // get return url from location state or default to home page
             const { from } = location.state || { from: { pathname: "/" } };
+            // console.log({ from })
             dispatch(userActions.login(username, password, from));
         }
     }
