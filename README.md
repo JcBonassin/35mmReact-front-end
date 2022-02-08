@@ -20,6 +20,7 @@ So what can I do with this gem:
 - run npm install. 
 - When is done run npm start and "Voila" 
 - Navigate to your local server http://localhost:9000/
+- You can find the backend [here](https://github.com/JcBonassin/35mm-react-backend-rails/).
 
 
 ## Contributing
